@@ -1,87 +1,164 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>StarterKart — Shopify Theme Customisation</title>
-<link rel="icon" href="assets/images/port1.svg">
-<link href="assets/css/style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StarterKart — Shopify Theme Customisation</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html">StarterKart</a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-      <a class="wh-btn" href="https://wa.me/9818082449" target="_blank">WhatsApp</a>
-    </nav>
-    <button class="nav-toggle" onclick="document.body.classList.toggle('nav-open')">☰</button>
-  </div>
-</header>
-
-<main>
-  <section class="hero container">
-    <div>
-      <div class="card">
-        <span class="logo-mark">StarterKart</span>
-        <h1>StarterKart – Shopify Theme Customisation Expert</h1>
-        <p class="lead">I specialise in customising Shopify themes (Impact, Impulse, Dawn, Refresh and more). Fast turnarounds, clean code, and pixel-perfect design.</p>
-        <a class="cta" href="https://wa.me/9818082449" target="_blank">Message Me on WhatsApp</a>
-        <div class="small admin-note">Demo admin: <span class="admin-badge">starter123</span> (use at <a href="admin/login.html">Admin</a>)</div>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container nav-grid">
+      <a class="brand" href="#">StarterKart</a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn-wh" href="https://wa.me/9818082449" target="_blank" rel="noopener">Message on WhatsApp</a>
+        <button class="burger" aria-label="menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
       </div>
     </div>
-    <div>
-      <div class="card">
-        <h3>Our Plans</h3>
-        <div id="pricing-list" class="pricing-cards"></div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <div class="eyebrow">Shopify Theme Customisation</div>
+      <h1 class="hero-title"><span class="accent">StarterKart</span> — We turn themes into conversion machines</h1>
+      <p class="hero-lead">Impactful, high-performance Shopify theme customisation. Fast turnarounds, clean code, and design-first approach for Impact, Impulse, Dawn and more.</p>
+
+      <div class="hero-ctas">
+        <a class="cta-primary" href="https://wa.me/9818082449" target="_blank" rel="noopener">Start on WhatsApp</a>
+        <a class="cta-ghost" href="#portfolio">View Case Studies</a>
+      </div>
+
+      <ul class="feature-row">
+        <li><strong>Theme edits</strong> — Sections & templates</li>
+        <li><strong>Speed</strong> — Optimise LCP & TTFB</li>
+        <li><strong>Branding</strong> — Pixel-perfect layouts</li>
+      </ul>
+    </div>
+
+    <div class="hero-right">
+      <div class="mockup">
+        <!-- animated gradient card stack -->
+        <div class="card card-top">
+          <div class="card-head">Home — Customised</div>
+          <div class="card-body">Hero layout, sections, banners</div>
+        </div>
+        <div class="card card-mid">
+          <div class="card-head">Product — PDP</div>
+          <div class="card-body">Clean CTA, faster checkout flow</div>
+        </div>
+        <div class="card card-bottom">
+          <div class="card-head">Speed Audit</div>
+          <div class="card-body">Lighthouse improvements</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">What we do</h2>
+      <p class="section-sub">We only offer Shopify theme customisation — tell us your theme link (Impact, Impulse, Dawn, etc.) and we'll handle the rest.</p>
+
+      <div class="cards">
+        <div class="service-card animate-pop">
+          <div class="icon">🔧</div>
+          <h3>Theme Customisation</h3>
+          <p>Add/change sections, product templates, and layout tweaks.</p>
+        </div>
+        <div class="service-card animate-pop">
+          <div class="icon">⚡</div>
+          <h3>Performance</h3>
+          <p>Speed audits, asset optimisation, and critical CSS.</p>
+        </div>
+        <div class="service-card animate-pop">
+          <div class="icon">🎨</div>
+          <h3>Branding & UI</h3>
+          <p>Pixel-perfect design, responsive styling and fonts.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section container">
-    <h2>What I Offer</h2>
-    <div class="grid">
-      <div class="service">
-        <h4>Theme Customisation</h4>
-        <p class="small">Add/change sections, layout, and product templates on Shopify themes.</p>
-      </div>
-      <div class="service">
-        <h4>Speed & Optimisation</h4>
-        <p class="small">Improve store performance, reduce LCP and TTFB.</p>
-      </div>
-      <div class="service">
-        <h4>Branding & Layout</h4>
-        <p class="small">Pixel-perfect design and responsive layouts using your brand assets.</p>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Selected work</h2>
+      <div id="port-list" class="portfolio-grid">
+        <!-- filled by JS -->
       </div>
     </div>
   </section>
 
-  <section class="section container">
-    <h2>Portfolio</h2>
-    <div id="port-list" class="card-grid"></div>
-  </section>
+  <!-- PRICING -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Plans</h2>
+      <p class="section-sub">Transparent packages or custom quotes — editable in the admin demo.</p>
 
-  <section class="section container">
-    <h2>Testimonials</h2>
-    <div class="card">
-      <div class="testimonial">
-        <strong>Ali R.</strong>
-        <p class="small">"StarterKart redesigned our product page and conversion improved a lot."</p>
+      <div id="pricing-list" class="pricing-grid">
+        <!-- filled by JS -->
       </div>
     </div>
   </section>
-</main>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>© StarterKart — Shopify Theme Customisation • <a href="admin/login.html">Admin</a></p>
-  </div>
-</footer>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container grid-contact">
+      <div class="contact-card">
+        <h2>Get started</h2>
+        <p class="small">Share your Shopify theme link and a brief. We’ll review and reply with a quote.</p>
+        <form id="contact-form" onsubmit="handleContact(event)">
+          <label class="small">Name<input id="c-name" required placeholder="Your name"></label>
+          <label class="small">Email<input id="c-email" type="email" required placeholder="you@domain.com"></label>
+          <label class="small">Shopify theme link<input id="c-theme" placeholder="Paste theme link (optional)"></label>
+          <label class="small">Message<textarea id="c-msg" rows="4" placeholder="What do you need?"></textarea></label>
+          <div class="form-ctas">
+            <button class="cta-primary" type="submit">Send Request</button>
+            <a class="cta-ghost" href="https://wa.me/9818082449" target="_blank" rel="noopener">Message on WhatsApp</a>
+          </div>
+        </form>
+      </div>
 
-<script src="assets/js/main.js"></script>
+      <div class="contact-info">
+        <div class="card info-card">
+          <h4>Contact</h4>
+          <p class="small">WhatsApp: <a href="https://wa.me/9818082449">+91 98180 82449</a></p>
+          <h4>Admin</h4>
+          <p class="small">Demo admin (password: <code>starter123</code>) — <a href="admin/login.html">Open Admin</a></p>
+        </div>
+        <div class="card info-card">
+          <h4>Why StarterKart?</h4>
+          <p class="small">Shopify-focused, fast, and conversion-driven customisations with clear deliverables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>StarterKart</strong><div class="small">Shopify Theme Customisation</div></div>
+      <div class="small">© <span id="year"></span> StarterKart — All rights reserved</div>
+      <div class="small">Made for merchants — <a href="admin/login.html">Admin</a></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
 </body>
-</html>
+            </html>
