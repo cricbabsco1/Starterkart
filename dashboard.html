@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard - StarterKart</title><link href="../assets/css/style.css" rel="stylesheet"></head><body>
+<header class="site-header"><div class="container"><a class="brand" href="../index.html">StarterKart</a> <nav class="main-nav"><a id="admin-logout" href="#" style="color:#fff;background:#231942;padding:6px 10px;border-radius:8px">Logout</a></nav></div></header>
+<main id="admin-dashboard" class="container section">
+  <h1>Admin Dashboard (Demo)</h1>
+  <p class="small">Edit pricing (saves to browser localStorage). This is a static demo — connect to real backend for production.</p>
+  <section>
+    <h3>Pricing Editor</h3>
+    <div id="pricing-editor"></div>
+  </section>
+  <section style="margin-top:20px">
+    <h3>Portfolio (view-only)</h3>
+    <div id="port-list" class="card-grid"></div>
+  </section>
+  <section style="margin-top:20px">
+    <h3>Notes for real backend</h3>
+    <ul>
+      <li>Implement authentication (JWT/session)</li>
+      <li>Create REST endpoints: /api/pricing, /api/portfolio, /api/inquiries</li>
+      <li>Store images in S3 or similar storage and save paths in DB</li>
+    </ul>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© StarterKart — Shopify Theme Customisation • <a href="admin/login.html">Admin</a></p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact — StarterKart</title><link href="assets/css/style.css" rel="stylesheet"></head><body><header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">StarterKart</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a class="wh-btn" href="https://wa.me/9818082449" target="_blank">WhatsApp</a>
+    </nav>
+    <button class="nav-toggle" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  </div>
+</header>
+
+<main class="container section">
+  <h1>Contact</h1>
+  <p class="small">Prefer WhatsApp? Click to message: <a href="https://wa.me/9818082449">9818082449</a></p>
+  <form id="contact-form" onsubmit="alert('This demo is static. For a live site configure a backend to receive submissions.'); return false;">
+    <div class="row"><label>Name</label><input required placeholder="Your name"></div>
+    <div class="row"><label>Email</label><input required placeholder="you@domain.com" type="email"></div>
+    <div class="row"><label>Shopify Theme Link</label><input placeholder="Paste theme link (e.g. theme store or zip link)"></div>
+    <div class="row"><label>Message</label><textarea placeholder="What do you need?"></textarea></div>
+    <button class="cta" type="submit">Send</button>
+  </form>
+</main><footer class="site-footer">
+  <div class="container">
+    <p>© StarterKart — Shopify Theme Customisation • <a href="admin/login.html">Admin</a></p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script></body></html>
